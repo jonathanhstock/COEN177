@@ -1,0 +1,14 @@
+Step1: This program creates 10 threads and enters the critical section and then returns 10 threads.
+This program differs from threadHello.c because it makes sure that all of the threads are created
+first in the critical section before returning them in the correct order. 
+Step2: This program is the same as step1 but now modifies it to include mutex locks instead of the semaphores. 
+Step3: This program uses semaphores to wait when the buffer queue is empty or full. It starts by creating
+two threads one for the producer and one for the consumer. In the producer function it creates an item and adds it
+to the buffer and then increments the index which is all within a while loop. In the consumer function it takes an
+item out of the buffer and increments the index which is all within a while loop. The semaphores are also implemented
+within each of the producer and consumer function. 
+Step4: This program works similarly to step3 except that now it uses condition signals for when to wait for the buffer 
+to fill up and to empty. It intiailizes the mutex and the conditions of empty and full then creates a producer and
+consumer thread. The producer function creates an infinite while loop which creates items and inserts them into the buffer
+and then increments the length each time. But at the same time the consumer is removing items from the buffer and
+decrementing the length. Therefore both of these functions will keep producing and consuming items over and over. 

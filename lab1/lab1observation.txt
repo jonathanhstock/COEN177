@@ -1,0 +1,7 @@
+# Name: Jonathan Stock 
+# Date: Wednesday 
+# Title: Lab1 – task 
+# Description: This is the observation file after computing the outputs of the 
+# first two programs rectangle.sh and circle.sh 
+
+The first program checks to see if I am the user logged in and if so then I can proceed with calculating the area of the rectangle. It then asks me to input the length and width of the rectangle then it calculates it. If my answer to calculate the area again is yes then it will continue to loop back to the beginning of the do while loop. The second program does the same first steps to check if the user is logged in then it prompts the user to input the radius of the circle and calculates it by multiplying the radius squared with 3.14. It then prompts the user if it would like to calculate the area of a circle again and if yes then it loops back to the beginning of the do while loop and if no then it quits the program. 

@@ -1,0 +1,8 @@
+Step1: This program runs 20 threads in a row just like the last lab. You basically get the same result everytime you run this program.
+If you are streaming a video in the background then it runs the program faster and in order of what threads come in and which are returned.
+The variables are per thread. The compiler stores these variable states in the memory. The main function variable i is shared state and
+the compiler stores the variable in the memory. 
+Step2: The possible outputs of the program are just the hello from thread with threadid and the main thread done.
+Step3: This program uses threads to multiply matrices. It starts by initializing one matrix to numbers from 0 to 1024 then intializes the
+second matrix to all 0's. It prints out both of these matrices and then creates a thread to copy the first matrix into the second matrix. 
+Then it creates another thread to multiply every entry in the first matrix by 2. Then it prints out the result of the updated first matrix. 

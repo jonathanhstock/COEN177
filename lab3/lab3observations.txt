@@ -1,0 +1,14 @@
+// Name: Jonathan Stock
+// Date: Wednesday
+// Title: Lab1 Observations
+
+Step1 lists out all of the files in the folder. 
+Step2 writes the current executable with spaces in between each character through a pipe. 
+Step3 does the same as step2 but instead just modifies it by using the ls command to list out all of the executables and files in the folder.
+Step4 prints out the root of the folder and cats out whatever is in the root.
+Step5 creates a producer and consumer which inputs a message and outputs that message to the other end of the pipe. 
+Step6 creates 10 threads through different iterations printing out the exact address of the thread when created and the iteration
+number that it is currently on which can be out of order sometimes. Then it returns the thread in order of creation. 
+The bug in step6 is that sometimes the iteration numbers repeat and are out of order as well. This is probably because they run asynchronously
+and share the same address space. 
+Step7 adjusts by creating a void* pointer to the i and a size_t type to adjust for when it is an int and when it is a pointer. 

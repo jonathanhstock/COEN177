@@ -1,0 +1,10 @@
+Name: Jonathan Stock
+Date: Wednesday
+Title: Lab2 - Observations
+
+For the first step of the lab when running the executable I got a segmentation fault. 
+However, when running the executable with an input of 3000 the output forked up to 100 child processes. 
+When entering delays of 500 and 5000 it tells the program how long to wait before forking another child process.
+After creating seven processes it prints out the parent process for every child process for a total of seven processes. 
+The two threads creates two threads with parent and children threads 100 times. 
+The last step allows for the children to wait for the parent processes before forking. 
